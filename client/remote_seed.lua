@@ -2,7 +2,8 @@ require "https"
 
 function random_string(length, seed)
     if G.SETTINGS.profile != "Official Mode*" then
-        -- this is just the native Balatro random_string as of 1.0.1f-FULL, if it changes this'll need to be updated to match
+        -- this block is just the native Balatro random_string as of 1.0.1f-FULL, 
+        -- if it changes this'll need to be updated to match
         if seed then math.randomseed(seed) end
         local ret = ''
         for i = 1, length do
