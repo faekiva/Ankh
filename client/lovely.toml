@@ -86,3 +86,9 @@ pattern = "G.screenwipecard = Card(1, 1, G.CARD_W, G.CARD_H, pseudorandom_elemen
 position = "at"
 payload = "G.screenwipecard = Card(1, 1, G.CARD_W, G.CARD_H, not DejaVu.replay and pseudorandom_element(G.P_CARDS), not DejaVu.replay and G.P_CENTERS.c_base or G.P_CENTERS.c_ankh)"
 match_indent = true
+
+[[patches]]
+[patches.copy]
+target = "functions/misc_functions.lua"
+position = "append"
+sources = ["remote_seed.lua"]

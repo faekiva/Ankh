@@ -9,4 +9,5 @@ function initSpeedrunTimer()
   end
   assert(load(nativefs.read(lovely.mod_dir.."/MathIsFun0-Ankh/logging.lua")))()
   assert(load(nativefs.read(lovely.mod_dir.."/MathIsFun0-Ankh/replay.lua")))()
+  assert(load(nativefs.read(lovely.mod_dir.."/MathIsFun0-Ankh/remote_seed.lua")))()
 end
